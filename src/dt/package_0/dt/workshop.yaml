@@ -1,0 +1,56 @@
+---
+apiVersion: thingswise.com/v1
+kind: entity
+metadata:
+  label:
+    i18n: {en-US: Workshop}
+spec:
+  class: workshop
+  key: workshop_key
+  lookups:
+  - {lookup_domain: Lookup, lookup_field: workshop_key, name: default}
+  rollup: true
+  scope: fabric
+  superclass: ['{package_0}abstract_child_1']
+  tags: []
+  timezone: Asia/Shanghai
+---
+apiVersion: thingswise.com/v1
+kind: primaryDataDomain
+spec:
+  class: workshop
+  fields:
+  - category: []
+    index: true
+    name: fabric_key
+    type: string
+  - category: []
+    index: true
+    name: workshop_key
+    type: string
+  kind: lookup
+  name: Lookup
+---
+apiVersion: thingswise.com/v1
+kind: operationalDataDomain
+metadata: {}
+spec:
+  class: workshop
+  fields:
+  - aggregated: true
+    category: [5e285124174bc4c9595a416c]
+    decimals: 3
+    default_stats: avg
+    kind: input
+    label:
+      i18n: {en-US: Coke}
+    name: Consumption.coke
+    note:
+      i18n: {en-US: Coke Consumption}
+    original_name: coke
+    resolution: [1min, 1h, 1d]
+    timeseries: true
+    type: number
+    unit:
+      i18n: {en-us: kg}
+  name: Consumption

@@ -1,0 +1,287 @@
+{
+  "fabric_0|workshop_1": {
+    "scope": "fabric_0",
+    "mixins": {
+      "Lookup": {
+        "class": "{package_0}workshop",
+        "workshop_key": "workshop_1",
+        "fabric_key": "fabric_0"
+      }
+    },
+    "groups": [
+      {
+        "id": "Admin",
+        "name": "Admin",
+        "permissions": {
+          "fabric_0|workshop_1": [
+            "READ:*",
+            "WRITE:*",
+            "yoi:_admin"
+          ]
+        },
+        "i18n": {
+          "zh-CN": "管理员",
+          "en-US": "Administrator"
+        }
+      },
+      {
+        "id": "User",
+        "name": "User",
+        "permissions": {
+          "fabric_0|workshop_1": [
+            "READ:*"
+          ]
+        },
+        "i18n": {
+          "zh-CN": "用户",
+          "en-US": "User"
+        }
+      }
+    ]
+  },
+  "fabric_0|warehouse_1": {
+    "scope": "fabric_0",
+    "mixins": {
+      "Lookup": {
+        "class": "{package_0}warehouse",
+        "warehouse_key": "warehouse_1",
+        "fabric_key": "fabric_0"
+      }
+    },
+    "groups": [
+      {
+        "id": "Admin",
+        "name": "Admin",
+        "permissions": {
+          "fabric_0|warehouse_1": [
+            "READ:*",
+            "WRITE:*",
+            "yoi:_admin"
+          ]
+        },
+        "i18n": {
+          "zh-CN": "管理员",
+          "en-US": "Administrator"
+        }
+      },
+      {
+        "id": "User",
+        "name": "User",
+        "permissions": {
+          "fabric_0|warehouse_1": [
+            "READ:*"
+          ]
+        },
+        "i18n": {
+          "zh-CN": "用户",
+          "en-US": "User"
+        }
+      }
+    ]
+  },
+  "fabric_0|warehouse_1|shop_1|inventory_1": {
+    "scope": "fabric_0|warehouse_1|shop_1",
+    "mixins": {
+      "Lookup": {
+        "class": "{package_0}inventory",
+        "inventory_key": "inventory_1",
+        "shop_key": "shop_1",
+        "warehouse_key": "warehouse_1",
+        "fabric_key": "fabric_0"
+      }
+    },
+    "groups": [
+      {
+        "id": "Admin",
+        "name": "Admin",
+        "permissions": {
+          "fabric_0|warehouse_1|shop_1|inventory_1": [
+            "READ:*",
+            "WRITE:*",
+            "yoi:_admin"
+          ]
+        },
+        "i18n": {
+          "zh-CN": "管理员",
+          "en-US": "Administrator"
+        }
+      },
+      {
+        "id": "User",
+        "name": "User",
+        "permissions": {
+          "fabric_0|warehouse_1|shop_1|inventory_1": [
+            "READ:*"
+          ]
+        },
+        "i18n": {
+          "zh-CN": "用户",
+          "en-US": "User"
+        }
+      }
+    ]
+  },
+  "fabric_0|workshop_1|цех_0|equipment_1": {
+    "scope": "fabric_0|workshop_1|цех_0",
+    "mixins": {
+      "Lookup": {
+        "class": "{package_0}equipment",
+        "equipment_key": "equipment_1",
+        "cex_key": "цех_0",
+        "workshop_key": "workshop_1",
+        "fabric_key": "fabric_0"
+      }
+    },
+    "groups": [
+      {
+        "id": "Admin",
+        "name": "Admin",
+        "permissions": {
+          "fabric_0|workshop_1|цех_0|equipment_1": [
+            "READ:*",
+            "WRITE:*",
+            "yoi:_admin"
+          ]
+        },
+        "i18n": {
+          "zh-CN": "管理员",
+          "en-US": "Administrator"
+        }
+      },
+      {
+        "id": "User",
+        "name": "User",
+        "permissions": {
+          "fabric_0|workshop_1|цех_0|equipment_1": [
+            "READ:*"
+          ]
+        },
+        "i18n": {
+          "zh-CN": "用户",
+          "en-US": "User"
+        }
+      }
+    ]
+  },
+  "fabric_0": {
+    "scope": "",
+    "mixins": {
+      "Lookup": {
+        "class": "{package_0}fabric",
+        "fabric_key": "fabric_0"
+      }
+    },
+    "groups": [
+      {
+        "id": "Admin",
+        "name": "Admin",
+        "permissions": {
+          "fabric_0": [
+            "READ:*",
+            "WRITE:*",
+            "yoi:_admin"
+          ]
+        },
+        "i18n": {
+          "zh-CN": "管理员",
+          "en-US": "Administrator"
+        }
+      },
+      {
+        "id": "User",
+        "name": "User",
+        "permissions": {
+          "fabric_0": [
+            "READ:*"
+          ]
+        },
+        "i18n": {
+          "zh-CN": "用户",
+          "en-US": "User"
+        }
+      }
+    ]
+  },
+  "fabric_0|warehouse_1|shop_1": {
+    "scope": "fabric_0|warehouse_1",
+    "mixins": {
+      "Lookup": {
+        "class": "{package_0}shop",
+        "shop_key": "shop_1",
+        "warehouse_key": "warehouse_1",
+        "fabric_key": "fabric_0"
+      }
+    },
+    "groups": [
+      {
+        "id": "Admin",
+        "name": "Admin",
+        "permissions": {
+          "fabric_0|warehouse_1|shop_1": [
+            "READ:*",
+            "WRITE:*",
+            "yoi:_admin"
+          ]
+        },
+        "i18n": {
+          "zh-CN": "管理员",
+          "en-US": "Administrator"
+        }
+      },
+      {
+        "id": "User",
+        "name": "User",
+        "permissions": {
+          "fabric_0|warehouse_1|shop_1": [
+            "READ:*"
+          ]
+        },
+        "i18n": {
+          "zh-CN": "用户",
+          "en-US": "User"
+        }
+      }
+    ]
+  },
+  "fabric_0|workshop_1|цех_0": {
+    "scope": "fabric_0|workshop_1",
+    "mixins": {
+      "Lookup": {
+        "class": "{package_0}Цех",
+        "cex_key": "цех_0",
+        "workshop_key": "workshop_1",
+        "fabric_key": "fabric_0"
+      }
+    },
+    "groups": [
+      {
+        "id": "Admin",
+        "name": "Admin",
+        "permissions": {
+          "fabric_0|workshop_1|цех_0": [
+            "READ:*",
+            "WRITE:*",
+            "yoi:_admin"
+          ]
+        },
+        "i18n": {
+          "zh-CN": "管理员",
+          "en-US": "Administrator"
+        }
+      },
+      {
+        "id": "User",
+        "name": "User",
+        "permissions": {
+          "fabric_0|workshop_1|цех_0": [
+            "READ:*"
+          ]
+        },
+        "i18n": {
+          "zh-CN": "用户",
+          "en-US": "User"
+        }
+      }
+    ]
+  }
+}

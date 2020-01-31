@@ -1,0 +1,139 @@
+{
+  "name": "fabric_0",
+  "i18n": {
+    "en-US": "",
+    "zh-CN": ""
+  },
+  "workshop_key": {
+    "workshop_1": {
+      "name": "workshop_1",
+      "i18n": {
+        "en-US": "",
+        "zh-CN": ""
+      },
+      "cex_key": {
+        "цех_0": {
+          "name": "цех_0",
+          "i18n": {
+            "en-US": "",
+            "zh-CN": ""
+          },
+          "equipment_key": {
+            "equipment_1": {
+              "name": "equipment_1",
+              "i18n": {
+                "en-US": "",
+                "zh-CN": ""
+              },
+              "class": [
+                {
+                  "fqn": "{package_0}equipment",
+                  "i18n": {
+                    "en-US": "Equipment"
+                  }
+                },
+                {
+                  "fqn": "{package_0}abstract_child_1",
+                  "i18n": {}
+                }
+              ]
+            }
+          },
+          "class": [
+            {
+              "fqn": "{package_0}Цех",
+              "i18n": {}
+            }
+          ]
+        }
+      },
+      "class": [
+        {
+          "fqn": "{package_0}workshop",
+          "i18n": {
+            "en-US": "Workshop"
+          }
+        },
+        {
+          "fqn": "{package_0}abstract_child_1",
+          "i18n": {}
+        }
+      ]
+    }
+  },
+  "warehouse_key": {
+    "warehouse_1": {
+      "name": "warehouse_1",
+      "i18n": {
+        "en-US": "",
+        "zh-CN": ""
+      },
+      "shop_key": {
+        "shop_1": {
+          "name": "shop_1",
+          "i18n": {
+            "en-US": "",
+            "zh-CN": ""
+          },
+          "inventory_key": {
+            "inventory_1": {
+              "name": "inventory_1",
+              "i18n": {
+                "en-US": "",
+                "zh-CN": ""
+              },
+              "class": [
+                {
+                  "fqn": "{package_0}inventory",
+                  "i18n": {
+                    "en-US": "Inventory"
+                  }
+                },
+                {
+                  "fqn": "{package_0}abstract_child_2",
+                  "i18n": {}
+                }
+              ]
+            }
+          },
+          "class": [
+            {
+              "fqn": "{package_0}shop",
+              "i18n": {
+                "en-US": "Shop"
+              }
+            },
+            {
+              "fqn": "{package_0}abstract_child_2",
+              "i18n": {}
+            }
+          ]
+        }
+      },
+      "class": [
+        {
+          "fqn": "{package_0}warehouse",
+          "i18n": {
+            "en-US": "Warehouse"
+          }
+        },
+        {
+          "fqn": "{package_0}abstract_child_2",
+          "i18n": {}
+        }
+      ]
+    }
+  },
+  "class": [
+    {
+      "fqn": "{package_0}fabric",
+      "i18n": {
+        "en-US": "Fabric"
+      }
+    },
+    {
+      "fqn": "{package_0}abstract_root_1",
+      "i18n": {}
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "Consumption.coke": {
+    "category": "5e285124174bc4c9595a416c",
+    "name": {
+      "i18n": {
+        "zh-CN": null,
+        "en-US": "Coke"
+      }
+    },
+    "note": {
+      "i18n": {
+        "zh-CN": null,
+        "en-US": "Coke Consumption"
+      }
+    },
+    "decimal": 3,
+    "unit": {
+      "i18n": {
+        "en-us": "kg"
+      }
+    }
+  }
+}

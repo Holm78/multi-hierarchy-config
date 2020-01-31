@@ -1,0 +1,64 @@
+---
+apiVersion: thingswise.com/v1
+kind: entity
+spec:
+  class: Цех
+  key: cex_key
+  lookups:
+  - {lookup_domain: Lookup, lookup_field: cex_key, name: default}
+  rollup: true
+  scope: workshop
+  superclass: []
+  tags: []
+  timezone: Asia/Shanghai
+---
+apiVersion: thingswise.com/v1
+kind: primaryDataDomain
+spec:
+  class: Цех
+  fields:
+  - category: []
+    index: true
+    name: fabric_key
+    type: string
+  - category: []
+    index: true
+    name: workshop_key
+    type: string
+  - category: []
+    index: true
+    name: cex_key
+    type: string
+  kind: lookup
+  name: Lookup
+---
+apiVersion: thingswise.com/v1
+kind: primaryDataDomain
+spec:
+  class: Цех
+  fields: []
+  name: Basic
+---
+apiVersion: thingswise.com/v1
+kind: operationalDataDomain
+metadata: {}
+spec:
+  class: Цех
+  fields:
+  - aggregated: true
+    category: [5e285124174bc4c9595a416c]
+    decimals: 3
+    default_stats: avg
+    kind: input
+    label:
+      i18n: {en-US: Coke}
+    name: Consumption.coke
+    note:
+      i18n: {en-US: Coke Consumption}
+    original_name: coke
+    resolution: [1min, 1h, 1d]
+    timeseries: true
+    type: number
+    unit:
+      i18n: {en-us: kg}
+  name: Consumption

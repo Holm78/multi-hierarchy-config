@@ -1,0 +1,26 @@
+{
+  "{package_0}equipment": {
+    "package_0___equipment.Consumption_input_csv": {
+      "domain": "Consumption",
+      "stream": "package_0___equipment.Consumption_input",
+      "type": "csv"
+    },
+    "package_0___equipment.Consumption_input_json": {
+      "domain": "Consumption",
+      "stream": "package_0___equipment.Consumption_input",
+      "type": "json"
+    }
+  },
+  "{package_0}inventory": {
+    "package_0___inventory.Consumption_input_csv": {
+      "domain": "Consumption",
+      "stream": "package_0___inventory.Consumption_input",
+      "type": "csv"
+    },
+    "package_0___inventory.Consumption_input_json": {
+      "domain": "Consumption",
+      "stream": "package_0___inventory.Consumption_input",
+      "type": "json"
+    }
+  }
+}

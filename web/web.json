@@ -1,0 +1,102 @@
+{
+  "brandImagePath": "logo.png",
+  "defaultGeo": "fabric_0",
+  "defaultLanguage": "zh-CN",
+  "designSpecsPath": "design.json",
+  "faviconPath": "favicon.png",
+  "languages": {
+    "en-US": "English",
+    "zh-CN": "\u7b80\u4f53\u4e2d\u6587"
+  },
+  "metadataDeviceField": "deviceId",
+  "metadataDomain": "Lookup",
+  "metricSpecsPath": "metric-specs.json",
+  "objectHierarchies": {
+    "fabric_key|warehouse_key|shop_key|inventory_key": {
+      "default": true,
+      "hierarchy": [
+        {
+          "geoStructField": "fabric_key",
+          "i18n": {
+            "en-US": "Fabric"
+          },
+          "name": "fabric_key",
+          "type": "geo"
+        },
+        {
+          "geoStructField": "warehouse_key",
+          "i18n": {
+            "en-US": "Workshop/Warehouse"
+          },
+          "name": "warehouse_key",
+          "type": "geo"
+        },
+        {
+          "geoStructField": "shop_key",
+          "i18n": {
+            "en-US": "Shop"
+          },
+          "name": "shop_key",
+          "type": "geo"
+        },
+        {
+          "geoStructField": "inventory_key",
+          "i18n": {
+            "en-US": "Equipment/Inventory"
+          },
+          "name": "inventory_key",
+          "type": "geo"
+        }
+      ],
+      "name": "fabric_key|warehouse_key|shop_key|inventory_key"
+    },
+    "fabric_key|workshop_key|cex_key|equipment_key": {
+      "default": false,
+      "hierarchy": [
+        {
+          "geoStructField": "fabric_key",
+          "i18n": {
+            "en-US": "Fabric"
+          },
+          "name": "fabric_key",
+          "type": "geo"
+        },
+        {
+          "geoStructField": "workshop_key",
+          "i18n": {
+            "en-US": "Workshop/Warehouse"
+          },
+          "name": "workshop_key",
+          "type": "geo"
+        },
+        {
+          "geoStructField": "cex_key",
+          "i18n": {
+            "en-US": "Shop"
+          },
+          "name": "cex_key",
+          "type": "geo"
+        },
+        {
+          "geoStructField": "equipment_key",
+          "i18n": {
+            "en-US": "Equipment/Inventory"
+          },
+          "name": "equipment_key",
+          "type": "geo"
+        }
+      ],
+      "name": "fabric_key|workshop_key|cex_key|equipment_key"
+    }
+  },
+  "pageTitle": {
+    "i18n": {
+      "en-US": "/opt/thingswise/model-designer/samples/multihierarchy"
+    }
+  },
+  "viewTitle": {
+    "i18n": {
+      "en-US": "/opt/thingswise/model-designer/samples/multihierarchy"
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "metricSpecs": {
+    "Consumption.coke": {
+      "category": [
+        "5e285124174bc4c9595a416c"
+      ],
+      "decimal": 3,
+      "default-stats": "avg",
+      "hierarchy": [
+        "fabric_key|workshop_key|cex_key|equipment_key",
+        "fabric_key|warehouse_key|shop_key|inventory_key"
+      ],
+      "model": [
+        "{package_0}equipment",
+        "{package_0}fabric",
+        "{package_0}inventory",
+        "{package_0}shop",
+        "{package_0}warehouse",
+        "{package_0}workshop",
+        "{package_0}\u0426\u0435\u0445"
+      ],
+      "name": {
+        "i18n": {
+          "en-US": "Coke"
+        }
+      },
+      "nameWithDomain": {
+        "i18n": {
+          "en-US": "Coke (Consumption)"
+        }
+      },
+      "note": {
+        "i18n": {
+          "en-US": "Coke Consumption"
+        }
+      },
+      "querySpecs": {
+        "timeseries": {
+          "fabric_key": {
+            "periods": [
+              "1min",
+              "1h",
+              "1d"
+            ],
+            "warehouse_key": {
+              "periods": [
+                "1min",
+                "1h",
+                "1d"
+              ],
+              "shop_key": {
+                "inventory_key": {
+                  "periods": [
+                    "1min",
+                    "1h",
+                    "1d"
+                  ]
+                },
+                "periods": [
+                  "1min",
+                  "1h",
+                  "1d"
+                ]
+              }
+            },
+            "workshop_key": {
+              "cex_key": {
+                "equipment_key": {
+                  "periods": [
+                    "1min",
+                    "1h",
+                    "1d"
+                  ]
+                },
+                "periods": [
+                  "1min",
+                  "1h",
+                  "1d"
+                ]
+              },
+              "periods": [
+                "1min",
+                "1h",
+                "1d"
+              ]
+            }
+          }
+        }
+      },
+      "timezone": "Asia/Shanghai",
+      "unit": {
+        "i18n": {
+          "en-us": "kg"
+        }
+      },
+      "valueType": "number:statistics"
+    }
+  }
+}

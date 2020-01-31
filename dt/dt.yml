@@ -1,0 +1,22 @@
+collate_search: false
+mixins:
+- fields:
+    cex_key: string
+    class: string
+    equipment_key: string
+    fabric_key: string
+    inventory_key: string
+    shop_key: string
+    warehouse_key: string
+    workshop_key: string
+  name: Lookup
+- name: package_0___equipment__Basic
+- name: package_0___equipment__Consumption
+- name: package_0___inventory__Basic
+- name: package_0___inventory__Consumption
+- name: "package_0___\u0426\u0435\u0445__Basic"
+- name: "package_0___\u0426\u0435\u0445__Consumption"
+- name: package_0___shop__Consumption
+- name: package_0___workshop__Consumption
+- name: package_0___warehouse__Consumption
+- name: package_0___fabric__Consumption
