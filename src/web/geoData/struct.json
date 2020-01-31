@@ -12,8 +12,8 @@
         "zh-CN": ""
       },
       "cex_key": {
-        "цех_0": {
-          "name": "цех_0",
+        "cex_0": {
+          "name": "cex_0",
           "i18n": {
             "en-US": "",
             "zh-CN": ""
@@ -41,8 +41,10 @@
           },
           "class": [
             {
-              "fqn": "{package_0}Цех",
-              "i18n": {}
+              "fqn": "{package_0}Cex",
+              "i18n": {
+                "en-US": "Cex"
+              }
             }
           ]
         }

@@ -11,13 +11,13 @@
         "fabric_key|warehouse_key|shop_key|inventory_key"
       ],
       "model": [
+        "{package_0}Cex",
         "{package_0}equipment",
         "{package_0}fabric",
         "{package_0}inventory",
         "{package_0}shop",
         "{package_0}warehouse",
-        "{package_0}workshop",
-        "{package_0}\u0426\u0435\u0445"
+        "{package_0}workshop"
       ],
       "name": {
         "i18n": {

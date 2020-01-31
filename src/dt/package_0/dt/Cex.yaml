@@ -1,8 +1,11 @@
 ---
 apiVersion: thingswise.com/v1
 kind: entity
+metadata:
+  label:
+    i18n: {en-US: Cex}
 spec:
-  class: Цех
+  class: Cex
   key: cex_key
   lookups:
   - {lookup_domain: Lookup, lookup_field: cex_key, name: default}
@@ -15,7 +18,7 @@ spec:
 apiVersion: thingswise.com/v1
 kind: primaryDataDomain
 spec:
-  class: Цех
+  class: Cex
   fields:
   - category: []
     index: true
@@ -35,7 +38,7 @@ spec:
 apiVersion: thingswise.com/v1
 kind: primaryDataDomain
 spec:
-  class: Цех
+  class: Cex
   fields: []
   name: Basic
 ---
@@ -43,7 +46,7 @@ apiVersion: thingswise.com/v1
 kind: operationalDataDomain
 metadata: {}
 spec:
-  class: Цех
+  class: Cex
   fields:
   - aggregated: true
     category: [5e285124174bc4c9595a416c]

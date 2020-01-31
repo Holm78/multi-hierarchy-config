@@ -8,8 +8,8 @@ from .shop import shop
 from .equipment import equipment
 from .fabric import fabric
 from .warehouse import warehouse
-from .Цех import Цех
 from .inventory import inventory
+from .Cex import Cex
 
 
 try:
@@ -26,8 +26,8 @@ shop().generate_model(digital_machine.digital_twin_model("package_0", "shop"), p
 equipment().generate_model(digital_machine.digital_twin_model("package_0", "equipment"), py_model_collection)
 fabric().generate_model(digital_machine.digital_twin_model("package_0", "fabric"), py_model_collection)
 warehouse().generate_model(digital_machine.digital_twin_model("package_0", "warehouse"), py_model_collection)
-Цех().generate_model(digital_machine.digital_twin_model("package_0", "Цех"), py_model_collection)
 inventory().generate_model(digital_machine.digital_twin_model("package_0", "inventory"), py_model_collection)
+Cex().generate_model(digital_machine.digital_twin_model("package_0", "Cex"), py_model_collection)
 
 
 models = py_model_collection.models

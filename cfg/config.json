@@ -28,14 +28,14 @@
     },
     {
       "i18n": {
-        "en-US": "Shop"
+        "en-US": "Cex/Shop"
       },
       "keys": [
         "cex_key",
         "shop_key"
       ],
       "models": [
-        "{package_0}\u0426\u0435\u0445",
+        "{package_0}Cex",
         "{package_0}shop"
       ]
     },
@@ -54,6 +54,104 @@
     }
   ],
   "models": {
+    "{package_0}Cex": {
+      "key": "cex_key",
+      "label": {
+        "i18n": {
+          "en-US": "Cex"
+        }
+      },
+      "level": 2,
+      "lookups": [
+        {
+          "lookup_domain": "Lookup",
+          "lookup_field": "cex_key",
+          "name": "default"
+        }
+      ],
+      "operational_domains": {
+        "Consumption": {
+          "fields": [
+            {
+              "aggregated": true,
+              "category": [
+                "5e285124174bc4c9595a416c"
+              ],
+              "decimals": 3,
+              "default_stats": "avg",
+              "index": false,
+              "kind": "input",
+              "label": {
+                "i18n": {
+                  "en-US": "Coke"
+                }
+              },
+              "name": "Consumption.coke",
+              "note": {
+                "i18n": {
+                  "en-US": "Coke Consumption"
+                }
+              },
+              "original_name": "coke",
+              "policy": "drop-field",
+              "resolution": [
+                "1min",
+                "1h",
+                "1d"
+              ],
+              "timeseries": true,
+              "type": "number",
+              "unit": {
+                "i18n": {
+                  "en-us": "kg"
+                }
+              }
+            }
+          ],
+          "mangled_name": "package_0___Cex__Consumption"
+        }
+      },
+      "primary_domains": {
+        "Basic": {
+          "fields": [],
+          "kind": "metadata",
+          "mangled_name": "package_0___Cex__Basic"
+        },
+        "Lookup": {
+          "fields": [
+            {
+              "category": [],
+              "index": true,
+              "name": "fabric_key",
+              "resolution": [],
+              "type": "string"
+            },
+            {
+              "category": [],
+              "index": true,
+              "name": "workshop_key",
+              "resolution": [],
+              "type": "string"
+            },
+            {
+              "category": [],
+              "index": true,
+              "name": "cex_key",
+              "resolution": [],
+              "type": "string"
+            }
+          ],
+          "kind": "lookup",
+          "mangled_name": "Lookup"
+        }
+      },
+      "rollup": true,
+      "scope": "{package_0}workshop",
+      "secondary_domains": {},
+      "superclass": [],
+      "tags": [],
+      "timezone": "Asia/Shanghai"
+    },
     "{package_0}equipment": {
       "key": "equipment_key",
       "label": {
@@ -166,7 +264,7 @@
         }
       },
       "rollup": true,
-      "scope": "{package_0}\u0426\u0435\u0445",
+      "scope": "{package_0}Cex",
       "secondary_domains": {},
       "superclass": [
         "{package_0}abstract_child_1"
@@ -642,99 +740,6 @@
       "superclass": [
         "{package_0}abstract_child_1"
       ],
-      "tags": [],
-      "timezone": "Asia/Shanghai"
-    },
-    "{package_0}\u0426\u0435\u0445": {
-      "key": "cex_key",
-      "level": 2,
-      "lookups": [
-        {
-          "lookup_domain": "Lookup",
-          "lookup_field": "cex_key",
-          "name": "default"
-        }
-      ],
-      "operational_domains": {
-        "Consumption": {
-          "fields": [
-            {
-              "aggregated": true,
-              "category": [
-                "5e285124174bc4c9595a416c"
-              ],
-              "decimals": 3,
-              "default_stats": "avg",
-              "index": false,
-              "kind": "input",
-              "label": {
-                "i18n": {
-                  "en-US": "Coke"
-                }
-              },
-              "name": "Consumption.coke",
-              "note": {
-                "i18n": {
-                  "en-US": "Coke Consumption"
-                }
-              },
-              "original_name": "coke",
-              "policy": "drop-field",
-              "resolution": [
-                "1min",
-                "1h",
-                "1d"
-              ],
-              "timeseries": true,
-              "type": "number",
-              "unit": {
-                "i18n": {
-                  "en-us": "kg"
-                }
-              }
-            }
-          ],
-          "mangled_name": "package_0___\u0426\u0435\u0445__Consumption"
-        }
-      },
-      "primary_domains": {
-        "Basic": {
-          "fields": [],
-          "kind": "metadata",
-          "mangled_name": "package_0___\u0426\u0435\u0445__Basic"
-        },
-        "Lookup": {
-          "fields": [
-            {
-              "category": [],
-              "index": true,
-              "name": "fabric_key",
-              "resolution": [],
-              "type": "string"
-            },
-            {
-              "category": [],
-              "index": true,
-              "name": "workshop_key",
-              "resolution": [],
-              "type": "string"
-            },
-            {
-              "category": [],
-              "index": true,
-              "name": "cex_key",
-              "resolution": [],
-              "type": "string"
-            }
-          ],
-          "kind": "lookup",
-          "mangled_name": "Lookup"
-        }
-      },
-      "rollup": true,
-      "scope": "{package_0}workshop",
-      "secondary_domains": {},
-      "superclass": [],
       "tags": [],
       "timezone": "Asia/Shanghai"
     }

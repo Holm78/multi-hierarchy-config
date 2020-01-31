@@ -121,13 +121,13 @@
       }
     ]
   },
-  "fabric_0|workshop_1|цех_0|equipment_1": {
-    "scope": "fabric_0|workshop_1|цех_0",
+  "fabric_0|workshop_1|cex_0|equipment_1": {
+    "scope": "fabric_0|workshop_1|cex_0",
     "mixins": {
       "Lookup": {
         "class": "{package_0}equipment",
         "equipment_key": "equipment_1",
-        "cex_key": "цех_0",
+        "cex_key": "cex_0",
         "workshop_key": "workshop_1",
         "fabric_key": "fabric_0"
       }
@@ -137,7 +137,7 @@
         "id": "Admin",
         "name": "Admin",
         "permissions": {
-          "fabric_0|workshop_1|цех_0|equipment_1": [
+          "fabric_0|workshop_1|cex_0|equipment_1": [
             "READ:*",
             "WRITE:*",
             "yoi:_admin"
@@ -152,7 +152,7 @@
         "id": "User",
         "name": "User",
         "permissions": {
-          "fabric_0|workshop_1|цех_0|equipment_1": [
+          "fabric_0|workshop_1|cex_0|equipment_1": [
             "READ:*"
           ]
         },
@@ -243,12 +243,12 @@
       }
     ]
   },
-  "fabric_0|workshop_1|цех_0": {
+  "fabric_0|workshop_1|cex_0": {
     "scope": "fabric_0|workshop_1",
     "mixins": {
       "Lookup": {
-        "class": "{package_0}Цех",
-        "cex_key": "цех_0",
+        "class": "{package_0}Cex",
+        "cex_key": "cex_0",
         "workshop_key": "workshop_1",
         "fabric_key": "fabric_0"
       }
@@ -258,7 +258,7 @@
         "id": "Admin",
         "name": "Admin",
         "permissions": {
-          "fabric_0|workshop_1|цех_0": [
+          "fabric_0|workshop_1|cex_0": [
             "READ:*",
             "WRITE:*",
             "yoi:_admin"
@@ -273,7 +273,7 @@
         "id": "User",
         "name": "User",
         "permissions": {
-          "fabric_0|workshop_1|цех_0": [
+          "fabric_0|workshop_1|cex_0": [
             "READ:*"
           ]
         },

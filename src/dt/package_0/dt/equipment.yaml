@@ -10,7 +10,7 @@ spec:
   lookups:
   - {lookup_domain: Lookup, lookup_field: equipment_key, name: default}
   rollup: true
-  scope: Цех
+  scope: Cex
   superclass: ['{package_0}abstract_child_1']
   tags: []
   timezone: Asia/Shanghai
